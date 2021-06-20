@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+</head>
+<style>
+    body{
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container{
+    margin: 50px auto;
+    justify-content: center;
+    display: flex;  
+}
+h1{
+    margin: 25px auto 0px auto;
+    text-align: center;
+}
+h2{
+    margin: 10px 0px;
+    padding: 12px 7px;
+}
+.contact{
+    margin: 28px 0px;
+    padding: 12px 7px;
+}
+#inp{
+    margin: 10px 7px;
+    padding: 12px 10px;
+    width: 176px;
+}
+#inp2{
+    margin: 10px 7px;
+    padding: 12px 10px;
+    width: 394px;
+}
+#inp3{
+    margin: 10px 7px;
+    padding: 12px 10px;
+    width: 394px;
+}
+.left{
+    margin: 15px 0px;
+    display: inline-block;
+    background-color: #F9F9F9;
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+}
+.right{
+    display: inline-block;
+    background-color: #CDF0EA;
+    width: 350px;
+    height: 580px;
+    border-radius: 15px;
+}
+.i1{
+    display: inline-block;
+}
+.lef{
+    margin: 10px;
+    width: 550px;
+    height: 500px;
+    padding: 20px 25px;
+}
+.symbol{
+    margin: 3% 3% 3% 0;
+}
+.border{
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.btn{
+    margin: 10px 7px;
+    width: 120px;
+    padding: 15px 12px;
+    background-color: #006fdc;
+    border: #006fdc;
+    color: white;
+}
+.btn:hover{
+    background-color: #1089ff;
+    border: #1089ff;
+}
+</style>
+<body>
+    <h1>Enquiry Form</h1>
+    <div class="container">
+        <div class="left">
+            <div class="lef">
+                <h2>Get in touch</h3>
+                <form action="/sign_up" method="POST">
+                    <div class="i1">
+                        <input type="text" placeholder="Name" id="inp" class="border" name="name">
+                    </div>
+                    <div class="i1">
+                        <input type="text" placeholder="Email" id="inp" class="border" name="email">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject" id="inp2" class="border" name="subject">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message" cols="30" rows="10" id="inp3" class="border" name="message"></textarea>
+                    </div>
+                    <button class="btn border">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div class="lef">
+                <h2 class="contact">Contact us</h2>
+                <p><i class="fas fa-map-marker-alt symbol"></i> Address: 1234/1A.</p>
+    
+                <p><i class="fas fa-phone-alt symbol"></i> Phone: + 1235 2355 98</p>
+    
+                <p><i class="fas fa-envelope symbol"></i> Email: info@site.com</p>
+    
+                <p><i class="fab fa-github symbol"></i> GitHub: https://github.com</p>
+
+                <p><i class="fab fa-linkedin symbol"></i> Linkedin: https://Linkedin.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
